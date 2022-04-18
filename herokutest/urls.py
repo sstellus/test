@@ -15,7 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from app1 import views as fb
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('index/', fb.index, name='index'),
 ]
+
+
+
